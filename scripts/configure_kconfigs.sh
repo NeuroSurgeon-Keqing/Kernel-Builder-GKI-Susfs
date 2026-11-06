@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # scripts/configure_kconfigs.sh
 set -euo pipefail
+echo 'CONFIG_LOCALVERSION="-g242e1a07f878-ab15865446-4k"' >> kernel_workspace/common/arch/arm64/configs/gki_defconfig
 
 ENABLE_NOMOUNT=${ENABLE_NOMOUNT:-false}
 ENABLE_NET_OPTS=${ENABLE_NET_OPTS:-false}
@@ -99,4 +100,3 @@ cd common
 
 cd ../..
 echo ">>> Configuration complete."
-echo 'CONFIG_LOCALVERSION="-g242e1a07f878-ab15865446-4k"' >> common/arch/arm64/configs/gki_defconfig
