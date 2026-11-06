@@ -99,3 +99,4 @@ cd common
 
 cd ../..
 echo ">>> Configuration complete."
+echo 'CONFIG_LOCALVERSION="-g242e1a07f878-ab15865446-4k"' >> common/arch/arm64/configs/gki_defconfig
